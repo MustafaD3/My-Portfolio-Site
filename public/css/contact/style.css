@@ -1,0 +1,93 @@
+#main {
+  padding-top: 1em;
+}
+#main #mail-container {
+  width: 50%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#main #mail-container h1 {
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+#main #mail-container #mail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#main #mail-container #mail-form input:not([type=submit]), #main #mail-container #mail-form textarea {
+  padding: 0.3em;
+  font-size: 1.1em;
+  border: 1px solid var(--primary2-color);
+}
+#main #mail-container #mail-form input:not([type=submit]):focus, #main #mail-container #mail-form textarea:focus {
+  outline: none;
+  border-right: 4px solid rgb(85, 85, 252);
+}
+#main #mail-container #mail-form textarea {
+  resize: none;
+}
+#main #mail-container #mail-form input[type=submit] {
+  padding: 0.8em;
+  font-size: 1.1em;
+  background-color: 0px;
+  border: 1px solid var(--primary2-color);
+  border-radius: 3px;
+  cursor: pointer;
+}
+#main #mail-container #mail-form input[type=submit]:active {
+  transition: 0.15s;
+  transform: translateY(3px);
+}
+#main #contact-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  padding: 2em 0px;
+}
+#main #contact-number #whatsapp, #main #contact-number #telephone {
+  font-size: 2em;
+  font-family: var(--secondary-font);
+}
+#main #contact-number #whatsapp:hover i, #main #contact-number #telephone:hover i {
+  color: #25d366;
+}
+#main #contact-number #whatsapp i, #main #contact-number #telephone i {
+  color: var(--primary-color);
+}
+#main #contact-number #whatsapp span, #main #contact-number #telephone span {
+  color: var(--primary-color);
+}
+#main #contact-number #telephone:hover i {
+  color: #2862e0;
+}
+
+@media only screen and (max-width: 600px) {
+  #mail-container {
+    width: 90% !important;
+  }
+  #contact-number {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #mail-container {
+    width: 70% !important;
+  }
+  #contact-number {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #mail-container {
+    width: 70% !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #mail-container {
+    width: 60% !important;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+#about{
+    width: 45%;
+    transform: translateY(20%);
+    margin: 0px auto;
+    font-size: 1.7em;
+    font-family: var(--secondary-font);
+    line-height: 1.5em;
+    word-break: break-word;
+}
+@media only screen and (max-width: 600px) {
+    #about{
+        width: 80%;
+        font-size: 1.4em;
+        transform: translateY(5%);
+        
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #about{
+        transform: translateY(5%);
+        width: 80%;
+        
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #about{
+        transform: translateY(7%);
+        width: 65%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    #about{ 
+        transform: translateY(15%);
+    }
+}
+@media only screen and (min-width: 1270px) {
+    #about{ 
+        transform: translateY(24%);
+    }
+}
+

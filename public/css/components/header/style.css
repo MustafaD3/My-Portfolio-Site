@@ -1,0 +1,52 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em;
+  border-bottom: 1px solid var(--primary2-color);
+}
+#header #site-name {
+  font-family: var(--secondary-font);
+}
+#header #header-link-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+#header #header-link-menu li a {
+  font-family: var(--secondary2-font);
+  font-weight: bold;
+  font-size: 1.15em;
+  color: var(--primary-color);
+}
+#header #header-link-menu li a:hover {
+  color: var(--primary2-color);
+}
+#header #header-link-menu li:last-child {
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  background-color: transparent;
+  background-image: linear-gradient(to left, var(--primary-color) 50%, var(--secondary-color) 50%);
+}
+#header #header-link-menu li:last-child a {
+  padding: 0.4em 2.8em;
+  display: inline-block;
+}
+#header #header-link-menu li:last-child a span:last-child {
+  color: var(--secondary-color);
+}
+#header #header-link-menu li:last-child:hover {
+  background-image: linear-gradient(to left, var(--secondary-color) 50%, var(--primary-color) 50%);
+}
+#header #header-link-menu li:last-child:hover a span {
+  color: var(--secondary-color);
+}
+#header #header-link-menu li:last-child:hover a span:last-child {
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 600px) {
+  #site-name {
+    font-size: 1.6em;
+  }
+}/*# sourceMappingURL=style.css.map */

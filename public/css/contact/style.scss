@@ -1,0 +1,105 @@
+#main{
+    padding-top: 1em;
+    #mail-container{
+        width: 50%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        h1{
+            text-align: center;
+            font-family: var(--secondary-font);
+        }
+        #mail-form{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            input:not([type=submit]),textarea{
+                padding: 0.3em;
+                font-size: 1.1em;
+                border: 1px solid var(--primary2-color);
+                &:focus{
+                    outline: none;
+                    border-right: 4px solid rgb(85, 85, 252);
+                }
+            }
+            textarea{
+                resize: none;
+            }
+            input[type=submit]{
+                padding: 0.8em;
+                font-size: 1.1em;
+                background-color: 0px;
+                border: 1px solid var(--primary2-color);
+                border-radius: 3px;
+                cursor: pointer;
+                &:active{
+                    transition: 0.15s;
+                    transform: translateY(3px);
+                }
+            }
+        }
+    }
+    #contact-number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        padding: 2em 0px;
+        #whatsapp,#telephone{
+            font-size: 2em;
+            font-family: var(--secondary-font);
+            
+            &:hover{
+                i{
+                    color:#25d366;
+                }
+            }
+            i{
+                color:var(--primary-color)
+                
+            }
+            span{
+                color:var(--primary-color)
+    
+            }
+        }
+        #telephone:hover{
+            i{
+                color:#2862e0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    #mail-container{
+        width: 90% !important;
+    }
+    #contact-number{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:768px) {
+    #mail-container{
+        width: 70% !important;
+    }
+    #contact-number{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+        #mail-container{
+            width: 70% !important;
+        }
+        
+
+}
+
+@media only screen and (min-width: 992px) {
+    #mail-container{
+        width: 60% !important;
+    }
+}
+
